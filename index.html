@@ -17,19 +17,19 @@
         }
 
         .header {
-    background-image: url(''); /* Ensure this path is correct */
-    background-size: contain; /* Adjusts image size to fit within the container */
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    width: 100%; /* Ensures the header spans the full width of the viewport */
-}
+            background-image: url(''); /* Ensure this path is correct */
+            background-size: contain; /* Adjusts image size to fit within the container */
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            width: 100%; /* Ensures the header spans the full width of the viewport */
+        }
 
         h1 {
             font-size: 3rem;
@@ -37,7 +37,7 @@
             padding: 0;
         }
 
-       p {
+        p {
             font-size: 1.2rem;
         }
 
@@ -65,86 +65,101 @@
             width: 100%;
             z-index: -10;
         }
+
         .footer__container {
-    background-color: #333; /* Dark background for contrast */
-    color: white; /* White text for visibility */
-    padding: 20px;
-    text-align: center;
-    position: relative; /* To ensure it sticks to the bottom */
-    bottom: 0;
-    width: 100%;
-}
+            background-color: #333; /* Dark background for contrast */
+            color: white; /* White text for visibility */
+            padding: 20px;
+            text-align: center;
+            position: relative; /* To ensure it sticks to the bottom */
+            bottom: 0;
+            width: 100%;
+        }
 
-.footer__links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+        .footer__links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
-.footer__link--wrapper {
-    display: flex;
-    flex-direction: column;
-    margin: 0 20px;
-}
+        .footer__link--wrapper {
+            display: flex;
+            flex-direction: column;
+            margin: 0 20px;
+        }
 
-.footer__link--items {
-    margin-bottom: 20px;
-}
+        .footer__link--items {
+            margin-bottom: 20px;
+        }
 
-.footer__link--items h2 {
-    margin-bottom: 10px;
-}
+        .footer__link--items h2 {
+            margin-bottom: 10px;
+        }
 
-.footer__link--items a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 8px;
-}
+        .footer__link--items a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
 
-.footer__link--items a:hover {
-    text-decoration: underline;
-}
+        .footer__link--items a:hover {
+            text-decoration: underline;
+        }
 
-.social__media {
-    margin-top: 20px;
-}
+        .social__media {
+            margin-top: 20px;
+        }
 
-.social__icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
+        .social__icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
 
-.social__icon--link {
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
-}
+        .social__icon--link {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+        }
 
-.website__rights {
-    margin-top: 10px;
-}
+        .website__rights {
+            margin-top: 10px;
+        }
+
+        /* WhatsApp floating button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            border-radius: 50%;
+        }
+
+        .whatsapp-float img {
+            width: 60px;
+            height: 60px;
+        }
 
     </style>
 </head>
 <body>
     <div id="particles-js"></div>
-    <div class="header">
-     
-    </div>
-    <div class="bg-image" style="background-image: url('ieee.jpg'); background-size: 80% 80%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; height: 50vh; length : 50% ;width: auto ; padding-top: 150px; color: white;">
+    <div class="header"></div>
+
+    <div class="bg-image" style="background-image: url('ieee.jpg'); background-size: 80% 80%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; height: 50vh; length: 50%; width: auto; padding-top: 150px; color: white;">
         <!-- Your content here -->
     </div>
-    
-    
-   <center>
-    <h1>Join IEEE NMAMIT</h1>
-    <center> <p>IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity. </p><p> Join us to connect with a global community of engineers, scientists, and professionals, and contribute to cutting-edge technological advancements.</p>
-    </center>
-     <a href="https://forms.gle/9d1mJt2i1gus75fU6" class="join-button">Join IEEE</a>
 
+    <center>
+        <h1>Join IEEE NMAMIT</h1>
+        <p>IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity.</p>
+        <p>Join us to connect with a global community of engineers, scientists, and professionals, and contribute to cutting-edge technological advancements.</p>
+        <a href="https://forms.gle/9d1mJt2i1gus75fU6" class="join-button">Join IEEE</a>
     </center>
+
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
         particlesJS("particles-js", {
@@ -253,12 +268,19 @@
             "retina_detect": true
         });
     </script>
-<br>
-</br>
-<br>
-</br>
-<br>
-</br>
+
+    <!-- WhatsApp floating button -->
+    <div class="whatsapp-float" style="background-color: black; padding: 5px; border-radius: 10px; transform: scale(0.8); transform-origin: bottom right;">
+        <a href="https://api.whatsapp.com/send?phone=9496605217&text=" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: white;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 20px; height: 20px; margin-right: 5px;">
+            <span style="font-size: 0.75rem;">Any Queries?</span>
+        </a>
+    </div>
+    
+    
+
+    <br><br><br>
+
 <div class="footer__container">
     <div class="footer__links">
         <!-- Your existing footer links -->
